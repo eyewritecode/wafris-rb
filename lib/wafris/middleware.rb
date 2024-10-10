@@ -19,7 +19,6 @@ module Wafris
         wafris_request.host,
         wafris_request.request_method,
         wafris_request.headers,
-        wafris_request.body,
         wafris_request.request_id,
         wafris_request.request_timestamp
       )

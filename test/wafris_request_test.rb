@@ -34,7 +34,6 @@ class WafrisRequestTest < Minitest::Test
         assert_equal 'example.com', wafris_request.host
         assert_equal 'GET', wafris_request.request_method
         assert_equal({'HTTP_USER_AGENT' => 'MockAgent', 'HTTP_HOST' => 'example.com'}, wafris_request.headers)
-        assert_equal 'test body', wafris_request.body
         assert_equal '123456', wafris_request.request_id
         assert_equal 1234567890, wafris_request.request_timestamp
       end
